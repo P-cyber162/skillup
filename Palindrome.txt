@@ -1,0 +1,22 @@
+/*A numeric palindrome is any number that can be read in both directions,
+that is from left to right and from right to left to give the same value.
+For example, 13533531 is a numeric palindrome. Write down a computer
+solution that can accept an n-digit integer number
+(not necessarily a numeric palindrome) and find an n-digit number,
+M when appended to the original number would make it a numeric palindrome.*/
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+    string n;
+    cout<<"Enter an integer number : ";
+    cin>>n;
+    cout<<n;
+    reverse(n.begin(),n.end());
+    cout<<n<<endl;
+
+
+    return 0;
+}
+

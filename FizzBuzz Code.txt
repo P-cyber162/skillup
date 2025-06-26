@@ -1,0 +1,18 @@
+/*FizzBuzz
+Print numbers from 1 to n. For multiples of 3, print "Fizz", 
+for multiples of 5 print "Buzz", and for multiples of both print 
+"FizzBuzz".*/
+
+let number;//Number is equated to a value to be check if it is a multiple of 3 or 5.
+if(number%3===0 && number%5!==0){
+   console.log("Fizz");
+}
+else if(number%3!==0 && number%5===0){
+   console.log("Buzz");
+}
+else if(number%3===0 &&number%5===0){
+   console.log("FizzBuzz");
+}
+else{
+   console.log("The number is not divisible by 3 and 5");
+}

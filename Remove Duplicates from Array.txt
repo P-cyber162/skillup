@@ -1,0 +1,11 @@
+/*Remove Duplicates from Array
+Write a function that removes duplicate values from an array without using Set.*/
+
+/*Remove Duplicates from Array
+Write a function that removes 
+duplicate values from an array 
+without using Set.*/
+let removeDuplicate=(arr)=>{
+   let newArr= [...new Set(arr)];
+
+         console.log(newArr);

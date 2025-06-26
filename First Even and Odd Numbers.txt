@@ -1,0 +1,27 @@
+/*Devise a computer solution that reads in
+ *a positive integer n and then prints
+ *the sum of the first n even integers
+ *and the sum of the first n odd numbers*/
+#include<iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout<<"Enter a positive integer: ";
+    cin>>number;
+    cout<<"The first "<<number<<" even numbers are :";
+    for(int i=1;i<=number*2;i++) {
+        if(i%2==0) {
+            cout<<i<<" ";
+        }
+    }
+    cout<<endl;
+    cout<<"The first "<<number<<" odd numbers are :";
+    for(int i=1;i<=number*2;i++) {
+        if(i%2==1) {
+            cout<<i<<" ";
+        }
+    }
+
+    return 0;
+}

@@ -1,0 +1,133 @@
+Question 1
+
+/*Even or Odd
+Write a function checkEvenOrOdd(num) 
+that prints "Even" if the number is even and "Odd" if the number is odd.
+*/
+
+let checkEvenOrOdd = (num)=>{
+    (num%2===0)? console.log("The number is even"): console.log("The number is odd");
+    
+}
+ checkEvenOrOdd(num);//Where num is a value to be inputted and checked.
+
+
+Question 2
+
+/*Add Two Numbers
+Create a function add(a, b) that 
+returns the sum of two numbers.
+*/ 
+
+const addNumbers = (num1 , num2) =>{
+    return num1+num2;
+}
+let result = addNumbers(a,b);//Where a and b are two numbers to be inputted added.
+console.log(result);
+
+
+Question 3
+
+/*Greet a User
+Write a function greet(name)
+ that prints: "Hello, [name]!" */
+
+ const greet=(name)=>{
+    console.log("Hello "+name+"!");
+ }
+ greet("Prince");
+
+
+
+Question 4
+
+/*
+Find the Bigger Number
+Write a function findBigger(a, b)
+that prints the larger of two numbers.
+*/ 
+const findBigger=(num1,num2)=>{
+    (num1>num2)? console.log("The largest number is :" + num1) : console.log("The largest number is :" + num2);
+}
+findBigger(a,b);//Where a and b are any two values to be inputted and compared.
+
+
+Question 5
+
+/*Count from 1 to 5
+Use a loop to print the numbers from 1 to 5.
+ */
+
+for(let i=1;i<=5;i++){
+    console.log(i);
+}
+
+
+Question 6
+
+/*Array Length
+Create an array of your 3 favorite fruits.
+Print the length of the array.
+ */
+
+let fruits=["Orange","Mangoe","Grapes"];
+console.log(fruits.length);
+
+Question 7
+
+/*First Item in Array
+Given an array of colors, 
+write code to print the first color 
+in the array. */
+
+let colors=["Red","Orange","Blue","Green","White"];
+console.log(colors[0]);
+
+
+Question 8
+
+/*Check if Number is Positive
+Write a function isPositive(num) 
+that prints "Positive" if the number is
+greater than 0, otherwise print 
+"Not positive" */
+
+let isPositive = (number)=>{
+    (number>0)?console.log("Positive") : console.log("Not Positive");
+    
+}
+
+isPositive(number);//Where number is the value to be inputted and tested.
+
+
+Question 9
+
+/*Reverse a String
+Write a function reverseString(str) 
+that takes a string and returns 
+it reversed.
+ */
+
+let reverseString=(str)=>{
+    let word = str.split("").reverse().join("");
+    console.log(word);
+}
+
+reverseString("prince"); 
+
+Question 10
+
+/*Print All Items in an Array
+Given an array of names, use a 
+loop to print each name. */
+
+let array = [1,2,3,4,5];
+ for(let i=0; i<array.length;i++){
+    console.log(array[i]);
+ }
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+//Printing symbol in a pattern
+#include<iostream>
+using namespace std;
+int main () {
+    char sign = '*';
+   for (int i=0; i<6;i++) {
+       for (int j=0;j<i;j++) {
+           cout << sign<<" ";
+       }
+       cout << endl;
+   }
+    return 0;
+}

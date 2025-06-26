@@ -1,0 +1,86 @@
+/* Write a program that reads a line of text,
+counting the number of words, identifying
+the length of the longest word, the greatest
+number of vowels in a word, and the word with
+the most vowels. */
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+string text;
+int count =1;
+
+int main() {
+
+    cout<<"Input a line of text :"<<endl;
+    getline(cin,text);
+
+    for(int i=0;i<text.length();i++) {
+        if(text[i]==' ') {
+            count++;
+        }
+    }
+    cout<<"The number of words in the line of text are "<<count<<endl;//Identifying the number of words in the line of text
+
+int arr[count];
+    int wordNum=0;
+    int wordCount=0;
+    text.append(" ");
+    for(int i=0;i<text.length();i++) {
+        if(text[i]!=' ') {
+            wordCount++;
+
+        }
+        else {
+            wordNum++;
+            cout<<"Word "<<wordNum<<" has the length of "<<wordCount<<endl;
+
+            wordCount=0;
+        }
+    }
+    //Unfortunately I'm stuck and I don't want to use AI Christian.
+    return 0;
+
+}
+
+
+
+
+
+
+Question 2
+
+/*.Write a program to replace all instances of character c1 with character c2 in a string and vice versa.
+Eg. Replacing a with b in the string "aabbcc" becomes  "bbaacc"*/
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+string word;
+char c1;
+char c2;
+
+int main(){
+    cout << "enter the word whose letters you want to swap"<<endl;
+    cin>> word;
+    cout<<"  enter the letter you would like to replace "<< endl;
+    cin>> c1;
+    cout<< "  what letter would you like to replace "<< endl;
+    cin>> c2;
+
+    for(int i = 0; i < word.length();i++){
+        if (word[i] == c1){
+            word[i] = c2;
+        }
+        else if ( word[i] == c2){
+            word[i] = c1;
+        }
+       
+
+    }
+    cout<< " Your new word is "<< word<< endl;
+    
+    return 0;
+}

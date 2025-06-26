@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+void calculation(double totalBill, double finalAmount);
+int main(){
+    double totalBill;
+    double finalAmount;
+    cout<<"Kindly enter the amount you ordered:\n";
+    cin>>totalBill;
+    calculation(totalBill,finalAmount);
+
+    return 0;
+}
+void calculation(double totalBill, double finalAmount) {
+    if(totalBill>50){
+        finalAmount = totalBill * 0.9;
+    }
+    else if(totalBill>=20){
+        finalAmount = totalBill * 0.95;
+    }
+    else{
+        finalAmount = totalBill;
+    }
+
+    cout<<"Your final bill is:"<<finalAmount;
+
+}

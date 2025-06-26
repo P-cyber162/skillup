@@ -1,0 +1,30 @@
+/* Given that a % b will give the remainder when a is divided by b,
+ * write a detailed computer solution that can be used to convert
+ * a number in base 10 to a different base.
+ * The inputs to your computer solution should be a number in base 10
+ * and a base the number is to be converted to.
+*/
+#include<iostream>
+using namespace std;
+int base;
+int rem;
+int number;
+int  multiplier=1;
+int ans=0;
+
+int main() {
+    int number, base;// number =10 base=2
+    cout<<"Enter a number in base 10 :";
+    cin>>number;
+    cout<<"Enter base number to be converted to from base 1-base 10 :";
+    cin>>base;
+    while (number!=0) {
+        rem= number % base;
+        ans=ans +(rem * multiplier);
+        multiplier*=10;
+        number= number /base;
+    }
+    cout<< ans<<endl;
+
+    return 0;
+}

@@ -1,0 +1,34 @@
+/*Check if Two Arrays are Equal
+Write a function to check if two 
+arrays have the same elements in 
+the same order.*/
+
+let equalChecker=(arr1 , arr2)=>{
+   if(arr1.length >= arr2.length){
+      let modulus= arr1;
+      console.log(modulus);
+      for(let i=0;i<modulus.length;i++){
+      if(arr1.length===arr2.length && arr1[i]===arr2[i]){
+         console.log("The two arrays have the same element");
+      }
+      else{
+         console.log("The two arrays do not have the same elements")
+      }
+   }
+   }
+   else {
+       modulus= arr2;
+     console.log(modulus);
+     for(let i=0;i<modulus.length;i++){
+      if(arr1.length===arr2.length && arr1[i]===arr2[i]){
+         console.log("The two arrays have the same element");
+      }
+      else{
+         console.log("The two arrays do not have the same elements")
+      }
+   }
+   }
+
+}
+
+equalChecker([2,4,6,8], [2,4,6,8]);
